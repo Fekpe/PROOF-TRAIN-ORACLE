@@ -1,0 +1,12 @@
+[
+    {
+        "tx_hash": "0x2b00b8910bbd93a9",
+        "dataset_hash": "3d61c2ec08e8bd318b831183c227ee2aad2ffb88c497c6a9da5f833a091b8616",
+        "model_hash": "50f3a56a79f3f18cbce02be1e395459b90d0aced0534f48f43b20b8b3a097ddb",
+        "accuracy": 100.0,
+        "training_time": 0.044,
+        "timestamp": "2025-11-12 11:56:00",
+        "price": 0.0782,
+        "quality_score": 94
+    }
+]

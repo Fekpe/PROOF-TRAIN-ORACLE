@@ -1,0 +1,13 @@
+{
+    "name": "sample.csv",
+    "dataset_hash": null,
+    "quality_score": 90.0,
+    "metrics": {
+        "rows": 4,
+        "columns": 5,
+        "missing_ratio": 0.0,
+        "numeric_cols": 2,
+        "categorical_cols": 3,
+        "bias_metric": 0.5
+    }
+}

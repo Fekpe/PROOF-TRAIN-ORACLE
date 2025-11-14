@@ -70,6 +70,8 @@ def train_and_prove(dataset_path):
         json.dump(metadata, f, indent=4)
 
     print(json.dumps(metadata, indent=4))
+    # return for programmatic use
+    return metadata
 
 if __name__ == "__main__":
     dataset_path = "sample_datasets/sample.csv"

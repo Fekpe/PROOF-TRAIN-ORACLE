@@ -100,8 +100,8 @@ export default function Home(){
     <div className="hero">
       <div className="hero-inner">
         <div className="hero-left">
-          <h1>Empowering People With AI</h1>
-          <p className="muted">Explore our cutting edge solutions and unlock new opportunities in the decentralized web.</p>
+          <h1>An experimental oracle that bridges AI model transparency and blockchain accountability.</h1>
+          <p className="muted">It evaluates datasets, trains models, and stores verifiable training proofs all without overengineering things.</p>
 
           <div className="upload-card">
             <label className="file-input">

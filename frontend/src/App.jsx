@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Home from './pages/Home'
 import Datasets from './pages/Datasets'
 import Models from './pages/Models'
+import Docs from './pages/Docs'
 import Logo from './logo.svg'
 
 function Nav({ page, setPage }) {
@@ -9,7 +10,7 @@ function Nav({ page, setPage }) {
     <nav className="nav">
       <div className="nav-left">
         <img src={Logo} alt="Proof Train Oracle" className="logo" />
-        <div className="brand">PROOFTRAIN</div>
+        <div className="brand">PROOF OF TRAIN ORACLE</div>
       </div>
 
       <div className="links">
@@ -41,7 +42,7 @@ export default function App() {
         {page === 'home' && <Home />}
         {page === 'datasets' && <Datasets />}
         {page === 'models' && <Models />}
-        {page === 'docs' && <div style={{padding:20}}>Documentation and resources</div>}
+        {page === 'docs' && <Docs />}
       </main>
     </div>
   )

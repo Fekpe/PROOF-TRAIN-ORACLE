@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="12" fill="#06a6dd" />
+  <g transform="translate(10 10)" fill="#fff">
+    <path d="M8 0h10v4H8z" />
+    <path d="M6 6h14v4H6z" />
+    <path d="M4 12h18v4H4z" />
+  </g>
+  <text x="32" y="54" font-size="8" text-anchor="middle" fill="#fff" font-family="Inter,Segoe UI,Arial">PTO</text>
+</svg>

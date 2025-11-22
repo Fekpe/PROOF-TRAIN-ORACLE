@@ -5,16 +5,50 @@
   --accent:#2563eb;
 }
 body{font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;background:var(--bg);margin:0;color:#111}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:#0f172a;color:#fff}
-.nav .brand{font-weight:700}
-.nav .links button{margin-left:8px;padding:6px 10px;border-radius:6px;border:0;background:transparent;color:inherit;cursor:pointer}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 28px;background:transparent;color:#fff;position:relative;z-index:20}
+.nav .nav-left{display:flex;align-items:center;gap:12px}
+.nav .logo{width:44px;height:44px}
+.nav .brand{font-weight:700;background:#06a6dd;padding:8px 12px;border-radius:4px}
+.nav .links button{margin-left:8px;padding:8px 12px;border-radius:6px;border:0;background:transparent;color:inherit;cursor:pointer}
 .nav .links .active{background:rgba(255,255,255,0.08)}
-.container{padding:20px}
+.nav .nav-right{display:flex;align-items:center;gap:8px}
+.nav .social{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:6px;background:rgba(255,255,255,0.9);color:#0b1230}
+.nav .social svg{display:block}
+.container{padding:0}
 .cards{display:flex;gap:12px}
 .card{background:var(--card);padding:12px;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.06);width:220px}
 .list{margin-top:12px}
 .item{display:flex;justify-content:space-between;align-items:center;padding:10px;background:var(--card);border-radius:6px;margin-bottom:8px;box-shadow:0 1px 2px rgba(0,0,0,0.04)}
 .item-left{display:flex;flex-direction:column}
 .muted{color:var(--muted);font-size:13px}
+.small{font-size:12px}
 .score{font-weight:700;color:var(--accent)}
 .meta{font-size:12px;color:var(--muted)}
+
+/* Hero */
+.hero{min-height:68vh;background:linear-gradient(180deg, rgba(2,6,23,0.6), rgba(2,6,23,0.6)), url('/assets/hero-bg.jpg') center/cover no-repeat;display:flex;align-items:center;color:#fff;padding:40px 20px}
+.hero-inner{display:flex;gap:24px;align-items:flex-start;justify-content:space-between;width:100%;max-width:1200px;margin:0 auto}
+.hero-left{max-width:640px}
+.hero h1{font-size:44px;margin:0 0 12px}
+.hero .muted{color:rgba(255,255,255,0.85);font-size:18px}
+
+.upload-card{margin-top:18px;background:rgba(255,255,255,0.06);padding:14px;border-radius:10px;display:flex;flex-direction:column;gap:10px}
+.file-input input{display:none}
+.file-input{display:inline-block;padding:10px 14px;background:#06a6dd;color:#fff;border-radius:8px;cursor:pointer}
+.file-meta{display:flex;justify-content:space-between;align-items:center;color:#fff}
+.actions{display:flex;gap:12px;margin-top:8px}
+.btn{padding:10px 14px;border-radius:8px;border:0;background:rgba(255,255,255,0.12);color:#fff;cursor:pointer}
+.btn.primary{background:#06a6dd;color:#fff}
+
+.hero-right{width:320px}
+.recent{background:rgba(255,255,255,0.06);padding:16px;border-radius:10px}
+.recent-header{font-weight:700;margin-bottom:8px}
+.recent-hash{font-family:monospace;font-size:12px;word-break:break-all}
+.recent-acc{font-size:20px;color:#06a6dd;font-weight:700;margin-top:8px}
+
+/* Responsive */
+@media(max-width:900px){
+  .hero-inner{flex-direction:column;align-items:flex-start}
+  .hero-right{width:100%}
+  .hero h1{font-size:32px}
+}
